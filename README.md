@@ -62,8 +62,8 @@ The course is designed for both live-coding and corresponding slides. Students s
 | 2 | Wed, February 21 <br> 6 - 8:30 PM EST | Building Queries: SELECT, FROM, WHERE, CASE, DISTINCT, JOINs | [Building Queries](https://github.com/UofT-DSI/02-sql/blob/main/PDFs/slides_02.pdf) |
 | 3 | Tues, February 27 <br> 6 - 8:30 PM EST | Essential Techniques: Aggregation Functions, Subqueries, Temporary Tables, CTEs, Datetime Functions | [Essential Techniques](https://github.com/UofT-DSI/02-sql/blob/main/PDFs/slides_03.pdf)|
 | 4 | Wed, February 28 <br> 6 - 8:30 PM EST | Advanced Techniques: NULL Management, Windowed Functions, String Manipulation, UNION & UNION ALL, INTERSECT & EXCEPT | [Advanced Techniques](https://github.com/UofT-DSI/02-sql/blob/main/PDFs/slides_04.pdf) |
-| 5 | Tues, March 12 <br> 6 - 8:30 PM EST | Expanding your Database: INSERT, UPDATE, DELETE, Importing & Exporting Data, CROSS & Self Joins, Views | [Expanding your Database]() |
-| 6 | Wed, March 13 <br> 6 - 8:30 PM AM EST | Beyond SQL: Normal Forms, SQL and the Machine Learning pipeline, Broader Data Landscape, Reproducibility, Ethics, SQL in the wild | [Beyond SQL]() |
+| 5 | Tues, March 12 <br> 6 - 8:30 PM EST | Expanding your Database: INSERT, UPDATE, DELETE, Importing & Exporting Data, CROSS & Self Joins, Views | [Expanding your Database](https://github.com/UofT-DSI/02-sql/blob/main/PDFs/slides_05.pdf) |
+| 6 | Wed, March 13 <br> 6 - 8:30 PM AM EST | Beyond SQL: Ethics, Normal Forms, SQLite in R & python | [Beyond SQL](https://github.com/UofT-DSI/02-sql/blob/main/PDFs/slides_06.pdf) |
 
 ## Assignments
 
@@ -77,7 +77,7 @@ Grading is pass/fail. There is only one assignment and six short (but mandatory)
 | [Homework 3 PDF](https://github.com/UofT-DSI/02-sql/blob/main/Homework/module_3/Homework%203.pdf) | Sat, March 2, by 11:59 PM EST | [Homework 3 SQL](https://github.com/UofT-DSI/02-sql/blob/main/Homework/module_3/Homework%203.sql) | 8% |
 | [Homework 4 PDF](https://github.com/UofT-DSI/02-sql/blob/main/Homework/module_4/Homework%204.pdf) | Sat, March 2, by 11:59 PM EST | [Homework 4 SQL](https://github.com/UofT-DSI/02-sql/blob/main/Homework/module_4/Homework%204.sql) | 8% |
 | [Homework 5 PDF](https://github.com/UofT-DSI/02-sql/blob/main/Homework/module_5/Homework%205.pdf) | Thurs, March 14, by 11:59 PM EST | [Homework 5 SQL](https://github.com/UofT-DSI/02-sql/blob/main/Homework/module_5/Homework%205.sql) | 8% |
-| [Homework 6 PDF](https://github.com/UofT-DSI/02-sql/blob/main/Homework/module_/Homework%206.pdf) | Sat, March 16, by 11:59 PM EST | [Homework 6 SQL](https://github.com/UofT-DSI/02-sql/blob/main/Homework/module_6/Homework%206.sql) | 8% |
+| [Homework 6 PDF](https://github.com/UofT-DSI/02-sql/blob/main/Homework/module_6/Homework%206.pdf) | Sat, March 16, by 11:59 PM EST | (╯°□°）╯︵ ┻━┻ | 8% |
 
 ## Folder Structure
 Below are the folders contained in this repo with a description of what they contain and information on how to use them.
