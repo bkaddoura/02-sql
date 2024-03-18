@@ -21,8 +21,8 @@ FROM product
 
 
 -- Cross Join
-/*1. Suppose every vendor in the `vendor_inventory` table had 5 of each of their products to sell to **every** 
-customer on record. How much money would each vendor make per product? 
+/*1. Suppose every vendor in the `vendor_inventory` table had 5 of each of their products to sell to 
+**every** customer on record. How much money would each vendor make per product? 
 Show this by vendor_name and product name, rather than using the IDs.
 
 HINT: Be sure you select only relevant columns and rows. 
@@ -31,7 +31,14 @@ Think a bit about the row counts: how many distinct vendors, product names are t
 How many customers are there (y). 
 Before your final group by you should have the product of those two queries (x*y).  */
 
-
+SELECT DISTINCT vendor_name, product_name, (5 * original_price * total_customers) as price
+FROM vendor_inventory vi 
+JOIN vendor v on v.vendor_id = vi.vendor_id
+JOIN product p on p.product_id = vi.product_id
+CROSS JOIN (
+SELECT COUNT(customer_id) as [total_customers]
+FROM customer
+)
 
 -- INSERT
 /*1.  Create a new table "product_units". 
@@ -39,10 +46,17 @@ This table will contain only products where the `product_qty_type = 'unit'`.
 It should use all of the columns from the product table, as well as a new column for the `CURRENT_TIMESTAMP`.  
 Name the timestamp column `snapshot_timestamp`. */
 
-
+DROP TABLE IF EXISTS temp.product_units; 
+CREATE TEMP TABLE IF NOT EXISTS product_units as
+SELECT p.*,CURRENT_TIMESTAMP as snapshot_timestamp
+FROM product as p		
+WHERE product_qty_type = 'unit'
 
 /*2. Using `INSERT`, add a new row to the product_units table (with an updated timestamp). 
 This can be any product you desire (e.g. add another record for Apple Pie). */
+
+INSERT INTO product_units
+VALUES(15,'Pork Chops', '1 lb', 6, 'unit', CURRENT_TIMESTAMP);
 
 
 
@@ -51,6 +65,9 @@ This can be any product you desire (e.g. add another record for Apple Pie). */
 
 HINT: If you don't specify a WHERE clause, you are going to have a bad time.*/
 
+DELETE FROM product_units
+WHERE product_id = 23
+AND snapshot_timestamp = '2024-03-18 06:55:10'
 
 
 -- UPDATE
@@ -70,4 +87,10 @@ Finally, make sure you have a WHERE statement to update the right row,
 	you'll need to use product_units.product_id to refer to the correct row within the product_units table. 
 When you have all of these components, you can run the update statement. */
 
+ALTER TABLE product_units
+ADD current_quantity INT;
+
+UPDATE product
+SET current_quantity = 	
+WHERE vendor_inventory.market_date = '2020-10-10' and vendor_inventory.vendor_id = 7 and vendor_inventory.product_id = 4
 
